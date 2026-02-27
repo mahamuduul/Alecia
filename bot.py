@@ -15,6 +15,12 @@ from telegram.ext import (
     filters,
 )
 
+print("MODEL:", OPENROUTER_MODEL)
+print("SITE_NAME:", OPENROUTER_SITE_NAME)
+print("SITE_URL:", OPENROUTER_SITE_URL)
+print("OPENROUTER_API_KEY present?", bool(OPENROUTER_API_KEY))
+print("BOT_TOKEN present?", bool(TOKEN))
+
 # Python 3.14 fix
 try:
     asyncio.get_event_loop()
