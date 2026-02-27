@@ -14,6 +14,15 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
+OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3-8b-instruct")
+OPENROUTER_SITE_NAME = os.getenv("OPENROUTER_SITE_NAME", "AleciaBot")
+OPENROUTER_SITE_URL = os.getenv("OPENROUTER_SITE_URL", "https://example.com")
+
+print("MODEL:", OPENROUTER_MODEL)
+print("SITE_NAME:", OPENROUTER_SITE_NAME)
+print("SITE_URL:", OPENROUTER_SITE_URL)
+print("OPENROUTER_API_KEY present?", bool(OPENROUTER_API_KEY))
+print("BOT_TOKEN present?", bool(TOKEN))
 
 print("MODEL:", OPENROUTER_MODEL)
 print("SITE_NAME:", OPENROUTER_SITE_NAME)
